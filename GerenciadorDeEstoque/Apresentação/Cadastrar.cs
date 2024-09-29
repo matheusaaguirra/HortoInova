@@ -130,5 +130,10 @@ namespace GerenciadorDeEstoque.Apresentação
             TelaPrincipal.Show();
             this.Hide();
         }
+
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

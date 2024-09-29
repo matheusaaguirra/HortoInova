@@ -24,12 +24,12 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
         {
             if (checkBox_Pago.Checked == true)
             {
-                checkBox_Cancelado.Checked = false;
+                checkBox_Pago.Checked = false;
             }
 
-            if (checkBox_Cancelado.Checked == true)
+            if (checkBox_Pago.Checked == true)
             {
-                checkBox_Cancelado.Checked = false;
+                checkBox_Pago.Checked = false;
             }
         }
 
@@ -38,9 +38,9 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
         {
             if (txb_Id.Text != "")
             {
-                if (checkBox_Pago.Checked != false || checkBox_Cancelado.Checked != false)
+                if (checkBox_Pago.Checked != false || checkBox_Pago.Checked != false)
                 {
-                    string mensagem = controle.CadastrarPedidoEstado(txb_Id.Text, checkBox_Pago.Checked, checkBox_Cancelado.Checked);
+                    string mensagem = controle.CadastrarPedidoEstado(txb_Id.Text, checkBox_Pago.Checked, checkBox_Pago.Checked);
 
                     if (controle.verificacao)
                     {

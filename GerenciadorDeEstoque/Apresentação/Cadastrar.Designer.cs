@@ -230,6 +230,7 @@ namespace GerenciadorDeEstoque.Apresentação
             this.Name = "Cadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar";
+            this.Load += new System.EventHandler(this.Cadastrar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
