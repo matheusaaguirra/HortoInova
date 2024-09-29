@@ -332,5 +332,50 @@
   <ItemGroup>
     <None Include="Resources\Armadureiro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-plant-wilt-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaf-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-regular-_1_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-regular-_1_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-solid24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse-solid24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-line-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears-solid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears-solid21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-gear-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-gear-solid211.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
