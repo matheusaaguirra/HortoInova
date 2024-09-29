@@ -148,7 +148,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.SystemColors.Window;
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label17.Location = new System.Drawing.Point(37, 561);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(44, 13);
@@ -169,7 +169,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // lblSuporte
             // 
             this.lblSuporte.AutoSize = true;
-            this.lblSuporte.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblSuporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.lblSuporte.Location = new System.Drawing.Point(14, 379);
             this.lblSuporte.Name = "lblSuporte";
             this.lblSuporte.Size = new System.Drawing.Size(94, 13);
@@ -190,7 +190,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.lblUsuario.Location = new System.Drawing.Point(39, 471);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
@@ -211,7 +211,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.Window;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label6.Location = new System.Drawing.Point(39, 199);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
@@ -232,7 +232,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label2.Location = new System.Drawing.Point(40, 288);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
@@ -253,7 +253,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label1.Location = new System.Drawing.Point(40, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
@@ -572,7 +572,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // gpBoxAnalise
             // 
-            this.gpBoxAnalise.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.gpBoxAnalise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(91)))), ((int)(((byte)(27)))));
             this.gpBoxAnalise.Controls.Add(this.graficoVendas);
             this.gpBoxAnalise.Controls.Add(this.btn2021);
             this.gpBoxAnalise.Controls.Add(this.btn2020);
@@ -599,35 +599,48 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // graficoVendas
             // 
+            this.graficoVendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(191)))), ((int)(((byte)(115)))));
+            this.graficoVendas.BorderlineColor = System.Drawing.Color.YellowGreen;
+            this.graficoVendas.BorderSkin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(191)))), ((int)(((byte)(115)))));
             chartArea1.Name = "ChartArea1";
             this.graficoVendas.ChartAreas.Add(chartArea1);
             this.graficoVendas.Location = new System.Drawing.Point(15, 334);
             this.graficoVendas.Name = "graficoVendas";
+            this.graficoVendas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             this.graficoVendas.Size = new System.Drawing.Size(1007, 266);
             this.graficoVendas.TabIndex = 18;
             this.graficoVendas.Text = "chart1";
             // 
             // btn2021
             // 
+            this.btn2021.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btn2021.FlatAppearance.BorderSize = 0;
+            this.btn2021.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2021.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btn2021.Location = new System.Drawing.Point(162, 68);
             this.btn2021.Name = "btn2021";
             this.btn2021.Size = new System.Drawing.Size(66, 23);
             this.btn2021.TabIndex = 17;
             this.btn2021.Text = "2021";
-            this.btn2021.UseVisualStyleBackColor = true;
+            this.btn2021.UseVisualStyleBackColor = false;
             // 
             // btn2020
             // 
+            this.btn2020.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btn2020.FlatAppearance.BorderSize = 0;
+            this.btn2020.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2020.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btn2020.Location = new System.Drawing.Point(90, 68);
             this.btn2020.Name = "btn2020";
             this.btn2020.Size = new System.Drawing.Size(66, 23);
             this.btn2020.TabIndex = 16;
             this.btn2020.Text = "2020";
-            this.btn2020.UseVisualStyleBackColor = true;
+            this.btn2020.UseVisualStyleBackColor = false;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label19.Location = new System.Drawing.Point(14, 73);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(71, 13);
@@ -636,127 +649,176 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // btnDezembro
             // 
+            this.btnDezembro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnDezembro.FlatAppearance.BorderSize = 0;
+            this.btnDezembro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDezembro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnDezembro.Location = new System.Drawing.Point(882, 29);
             this.btnDezembro.Name = "btnDezembro";
             this.btnDezembro.Size = new System.Drawing.Size(66, 23);
             this.btnDezembro.TabIndex = 14;
             this.btnDezembro.Text = "Dezembro";
-            this.btnDezembro.UseVisualStyleBackColor = true;
+            this.btnDezembro.UseVisualStyleBackColor = false;
             this.btnDezembro.Click += new System.EventHandler(this.btnDezembro_Click);
             // 
             // btnNovembro
             // 
+            this.btnNovembro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnNovembro.FlatAppearance.BorderSize = 0;
+            this.btnNovembro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovembro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnNovembro.Location = new System.Drawing.Point(810, 29);
             this.btnNovembro.Name = "btnNovembro";
             this.btnNovembro.Size = new System.Drawing.Size(66, 23);
             this.btnNovembro.TabIndex = 13;
             this.btnNovembro.Text = "Novembro";
-            this.btnNovembro.UseVisualStyleBackColor = true;
+            this.btnNovembro.UseVisualStyleBackColor = false;
             this.btnNovembro.Click += new System.EventHandler(this.btnNovembro_Click);
             // 
             // btnOutubro
             // 
+            this.btnOutubro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnOutubro.FlatAppearance.BorderSize = 0;
+            this.btnOutubro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutubro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnOutubro.Location = new System.Drawing.Point(738, 29);
             this.btnOutubro.Name = "btnOutubro";
             this.btnOutubro.Size = new System.Drawing.Size(66, 23);
             this.btnOutubro.TabIndex = 12;
             this.btnOutubro.Text = "Outubro";
-            this.btnOutubro.UseVisualStyleBackColor = true;
+            this.btnOutubro.UseVisualStyleBackColor = false;
             this.btnOutubro.Click += new System.EventHandler(this.btnOutubro_Click);
             // 
             // btnSetembro
             // 
+            this.btnSetembro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnSetembro.FlatAppearance.BorderSize = 0;
+            this.btnSetembro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetembro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnSetembro.Location = new System.Drawing.Point(666, 29);
             this.btnSetembro.Name = "btnSetembro";
             this.btnSetembro.Size = new System.Drawing.Size(66, 23);
             this.btnSetembro.TabIndex = 11;
             this.btnSetembro.Text = "Setembro";
-            this.btnSetembro.UseVisualStyleBackColor = true;
+            this.btnSetembro.UseVisualStyleBackColor = false;
             this.btnSetembro.Click += new System.EventHandler(this.btnSetembro_Click);
             // 
             // btnAgosto
             // 
+            this.btnAgosto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnAgosto.FlatAppearance.BorderSize = 0;
+            this.btnAgosto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgosto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnAgosto.Location = new System.Drawing.Point(594, 29);
             this.btnAgosto.Name = "btnAgosto";
             this.btnAgosto.Size = new System.Drawing.Size(66, 23);
             this.btnAgosto.TabIndex = 10;
             this.btnAgosto.Text = "Agosto";
-            this.btnAgosto.UseVisualStyleBackColor = true;
+            this.btnAgosto.UseVisualStyleBackColor = false;
             this.btnAgosto.Click += new System.EventHandler(this.btnAgosto_Click);
             // 
             // btnJulho
             // 
+            this.btnJulho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnJulho.FlatAppearance.BorderSize = 0;
+            this.btnJulho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJulho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnJulho.Location = new System.Drawing.Point(522, 29);
             this.btnJulho.Name = "btnJulho";
             this.btnJulho.Size = new System.Drawing.Size(66, 23);
             this.btnJulho.TabIndex = 9;
             this.btnJulho.Text = "Julho";
-            this.btnJulho.UseVisualStyleBackColor = true;
+            this.btnJulho.UseVisualStyleBackColor = false;
             this.btnJulho.Click += new System.EventHandler(this.btnJulho_Click);
             // 
             // btnJunho
             // 
+            this.btnJunho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnJunho.FlatAppearance.BorderSize = 0;
+            this.btnJunho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJunho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnJunho.Location = new System.Drawing.Point(450, 29);
             this.btnJunho.Name = "btnJunho";
             this.btnJunho.Size = new System.Drawing.Size(66, 23);
             this.btnJunho.TabIndex = 8;
             this.btnJunho.Text = "Junho";
-            this.btnJunho.UseVisualStyleBackColor = true;
+            this.btnJunho.UseVisualStyleBackColor = false;
             this.btnJunho.Click += new System.EventHandler(this.btnJunho_Click);
             // 
             // btnMaio
             // 
+            this.btnMaio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnMaio.FlatAppearance.BorderSize = 0;
+            this.btnMaio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnMaio.Location = new System.Drawing.Point(378, 29);
             this.btnMaio.Name = "btnMaio";
             this.btnMaio.Size = new System.Drawing.Size(66, 23);
             this.btnMaio.TabIndex = 7;
             this.btnMaio.Text = "Maio";
-            this.btnMaio.UseVisualStyleBackColor = true;
+            this.btnMaio.UseVisualStyleBackColor = false;
             this.btnMaio.Click += new System.EventHandler(this.btnMaio_Click);
             // 
             // btnAbril
             // 
+            this.btnAbril.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnAbril.FlatAppearance.BorderSize = 0;
+            this.btnAbril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbril.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnAbril.Location = new System.Drawing.Point(306, 29);
             this.btnAbril.Name = "btnAbril";
             this.btnAbril.Size = new System.Drawing.Size(66, 23);
             this.btnAbril.TabIndex = 6;
             this.btnAbril.Text = "Abril";
-            this.btnAbril.UseVisualStyleBackColor = true;
+            this.btnAbril.UseVisualStyleBackColor = false;
             this.btnAbril.Click += new System.EventHandler(this.btnAbril_Click);
             // 
             // btnMarco
             // 
+            this.btnMarco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnMarco.FlatAppearance.BorderSize = 0;
+            this.btnMarco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnMarco.Location = new System.Drawing.Point(234, 29);
             this.btnMarco.Name = "btnMarco";
             this.btnMarco.Size = new System.Drawing.Size(66, 23);
             this.btnMarco.TabIndex = 5;
             this.btnMarco.Text = "Março";
-            this.btnMarco.UseVisualStyleBackColor = true;
+            this.btnMarco.UseVisualStyleBackColor = false;
             this.btnMarco.Click += new System.EventHandler(this.btnMarco_Click);
             // 
             // btnFevereiro
             // 
+            this.btnFevereiro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnFevereiro.FlatAppearance.BorderSize = 0;
+            this.btnFevereiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFevereiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnFevereiro.Location = new System.Drawing.Point(162, 29);
             this.btnFevereiro.Name = "btnFevereiro";
             this.btnFevereiro.Size = new System.Drawing.Size(66, 23);
             this.btnFevereiro.TabIndex = 4;
             this.btnFevereiro.Text = "Fevereiro";
-            this.btnFevereiro.UseVisualStyleBackColor = true;
+            this.btnFevereiro.UseVisualStyleBackColor = false;
             this.btnFevereiro.Click += new System.EventHandler(this.btnFevereiro_Click);
             // 
             // btnJaneiro
             // 
+            this.btnJaneiro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnJaneiro.FlatAppearance.BorderSize = 0;
+            this.btnJaneiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJaneiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnJaneiro.Location = new System.Drawing.Point(90, 29);
             this.btnJaneiro.Name = "btnJaneiro";
             this.btnJaneiro.Size = new System.Drawing.Size(66, 23);
             this.btnJaneiro.TabIndex = 3;
             this.btnJaneiro.Text = "Janeiro";
-            this.btnJaneiro.UseVisualStyleBackColor = true;
+            this.btnJaneiro.UseVisualStyleBackColor = false;
             this.btnJaneiro.Click += new System.EventHandler(this.btnJaneiro_Click);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label18.Location = new System.Drawing.Point(14, 33);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(72, 13);
@@ -765,6 +827,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // listViewAnaliseVendas
             // 
+            this.listViewAnaliseVendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(191)))), ((int)(((byte)(115)))));
             this.listViewAnaliseVendas.HideSelection = false;
             this.listViewAnaliseVendas.Location = new System.Drawing.Point(14, 103);
             this.listViewAnaliseVendas.Name = "listViewAnaliseVendas";
@@ -838,6 +901,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sairToolStripMenuItem});
+            this.arquivoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
@@ -845,12 +909,13 @@ namespace GerenciadorDeEstoque.Apresentação
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(143)))), ((int)(((byte)(104)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -863,7 +928,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(38)))), ((int)(((byte)(12)))));
             this.ClientSize = new System.Drawing.Size(1167, 625);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.gpBoxUsuario);

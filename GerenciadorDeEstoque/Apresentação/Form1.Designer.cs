@@ -52,28 +52,29 @@ namespace GerenciadorDeEstoque
             // 
             // txb_register
             // 
-            this.txb_register.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.txb_register.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.txb_register, "txb_register");
-            this.txb_register.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txb_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_register.Name = "txb_register";
             this.txb_register.UseVisualStyleBackColor = false;
             this.txb_register.Click += new System.EventHandler(this.txb_register_Click);
             // 
             // txb_email
             // 
-            this.txb_email.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txb_email, "txb_email");
-            this.txb_email.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_email.Name = "txb_email";
             this.txb_email.Click += new System.EventHandler(this.txb_email_Click);
             // 
             // txb_password
             // 
-            this.txb_password.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txb_password, "txb_password");
-            this.txb_password.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_password.HideSelection = false;
             this.txb_password.Name = "txb_password";
             this.txb_password.Click += new System.EventHandler(this.txb_password_Click_1);
@@ -81,8 +82,10 @@ namespace GerenciadorDeEstoque
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -115,9 +118,10 @@ namespace GerenciadorDeEstoque
             // 
             // txb_join
             // 
-            this.txb_join.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.txb_join.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.txb_join.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.txb_join, "txb_join");
-            this.txb_join.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txb_join.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_join.Name = "txb_join";
             this.txb_join.UseVisualStyleBackColor = false;
             this.txb_join.Click += new System.EventHandler(this.txb_join_Click);
@@ -146,6 +150,7 @@ namespace GerenciadorDeEstoque
             // checkBoxDadosLogin
             // 
             resources.ApplyResources(this.checkBoxDadosLogin, "checkBoxDadosLogin");
+            this.checkBoxDadosLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.checkBoxDadosLogin.Name = "checkBoxDadosLogin";
             this.checkBoxDadosLogin.UseVisualStyleBackColor = true;
             // 
@@ -153,7 +158,7 @@ namespace GerenciadorDeEstoque
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(91)))), ((int)(((byte)(27)))));
             this.Controls.Add(this.checkBoxDadosLogin);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel3);

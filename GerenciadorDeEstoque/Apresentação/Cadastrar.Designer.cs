@@ -47,10 +47,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_password_c
             // 
-            this.txb_password_c.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_password_c.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_password_c.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_password_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_password_c.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_password_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_password_c.Location = new System.Drawing.Point(42, 103);
             this.txb_password_c.MaxLength = 25;
             this.txb_password_c.Name = "txb_password_c";
@@ -62,10 +62,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_email_c
             // 
-            this.txb_email_c.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_email_c.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_email_c.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_email_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_email_c.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_email_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_email_c.Location = new System.Drawing.Point(42, 69);
             this.txb_email_c.MaxLength = 50;
             this.txb_email_c.Name = "txb_email_c";
@@ -76,9 +76,11 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_register
             // 
-            this.txb_register.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.txb_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.txb_register.FlatAppearance.BorderSize = 0;
             this.txb_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txb_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_register.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txb_register.Location = new System.Drawing.Point(51, 239);
             this.txb_register.Name = "txb_register";
@@ -90,10 +92,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_confirmpassword
             // 
-            this.txb_confirmpassword.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_confirmpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_confirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_confirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_confirmpassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_confirmpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_confirmpassword.Location = new System.Drawing.Point(42, 134);
             this.txb_confirmpassword.MaxLength = 25;
             this.txb_confirmpassword.Name = "txb_confirmpassword";
@@ -105,10 +107,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txtb_reminderpassword
             // 
-            this.txtb_reminderpassword.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtb_reminderpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txtb_reminderpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtb_reminderpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtb_reminderpassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtb_reminderpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txtb_reminderpassword.Location = new System.Drawing.Point(42, 199);
             this.txtb_reminderpassword.MaxLength = 50;
             this.txtb_reminderpassword.Name = "txtb_reminderpassword";
@@ -119,10 +121,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_celphone
             // 
-            this.txb_celphone.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_celphone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_celphone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_celphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_celphone.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_celphone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_celphone.HideSelection = false;
             this.txb_celphone.Location = new System.Drawing.Point(42, 165);
             this.txb_celphone.Mask = "(999) 00000-0000";
@@ -132,10 +134,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // txb_name
             // 
-            this.txb_name.BackColor = System.Drawing.Color.SteelBlue;
+            this.txb_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txb_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_name.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.txb_name.Location = new System.Drawing.Point(42, 37);
             this.txb_name.MaxLength = 50;
             this.txb_name.Name = "txb_name";
@@ -194,9 +196,11 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.btnVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnVoltar.Location = new System.Drawing.Point(51, 282);
             this.btnVoltar.Name = "btnVoltar";
@@ -210,7 +214,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(91)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(302, 348);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.panel6);

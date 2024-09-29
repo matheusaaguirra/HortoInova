@@ -49,7 +49,7 @@ namespace GerenciadorDeEstoque.Apresentação.Usuário
             this.txbCelular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txbCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbCelular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.txbCelular.Location = new System.Drawing.Point(51, 82);
+            this.txbCelular.Location = new System.Drawing.Point(52, 85);
             this.txbCelular.Mask = "(999) 00000-0000";
             this.txbCelular.Name = "txbCelular";
             this.txbCelular.Size = new System.Drawing.Size(235, 13);
@@ -83,7 +83,7 @@ namespace GerenciadorDeEstoque.Apresentação.Usuário
             // 
             this.txbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(140)))), ((int)(((byte)(48)))));
             this.txbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbEmail.Location = new System.Drawing.Point(51, 47);
+            this.txbEmail.Location = new System.Drawing.Point(51, 50);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(235, 13);
             this.txbEmail.TabIndex = 7;
