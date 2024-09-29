@@ -315,11 +315,15 @@ namespace GerenciadorDeEstoque.DAO
         private void InitializeComponent()
         {
             this.SuspendLayout();
+            // 
             // LoginDaoComandos
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "LoginDaoComandos";
+            this.Load += new System.EventHandler(this.LoginDaoComandos_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -598,6 +602,11 @@ namespace GerenciadorDeEstoque.DAO
                 this.mensagem = "Erro!";
             }
             return mensagem;
+        }
+
+        private void LoginDaoComandos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

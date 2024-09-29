@@ -40,57 +40,69 @@ namespace GerenciadorDeEstoque
         private void ChecarLoginSalvo() // Método para checar se o usuário marcou para lembrar os dados de login
         {
             con.Open();
-            SqlCommand comando = new SqlCommand("select salvar from salvar_dados where id = 1;", con);
+            SqlCommand comando = new SqlCommand("SELECT salvar FROM salvar_dados WHERE id = 1;", con);
             da = new SqlDataAdapter(comando);
             ds = new DataSet();
             da.Fill(ds, "estoque");
             con.Close();
-            dt = ds.Tables["estoque"];
 
-            for(int i = 0; i <= dt.Rows.Count - 1; i++)
+            if (ds.Tables["estoque"].Rows.Count > 0) // Verifique se há linhas retornadas
             {
-                CodSalvoLogin = Convert.ToInt32(dt.Rows[i].ItemArray[0].ToString());
+                dt = ds.Tables["estoque"];
+                CodSalvoLogin = Convert.ToInt32(dt.Rows[0]["salvar"]);
+                if (CodSalvoLogin == 1)
+                {
+                    EmailSalvo();
+                    SenhaSalva();
+                    checkBoxDadosLogin.Checked = true;
+                }
             }
-
-            if(CodSalvoLogin == 1)
+            else
             {
-                EmailSalvo();
-                SenhaSalva();
-                checkBoxDadosLogin.Checked = true;
+                MessageBox.Show("Nenhum dado salvo encontrado.");
             }
         }
 
         private void EmailSalvo() // Método para obter o registro do e-mail do login caso tenha sido memorizado
         {
             con.Open();
-            SqlCommand comandologin = new SqlCommand("select email from salvar_dados where id = 1;", con);
+            SqlCommand comandologin = new SqlCommand("SELECT email FROM salvar_dados WHERE id = 1;", con);
             da = new SqlDataAdapter(comandologin);
             ds = new DataSet();
             da.Fill(ds, "estoque");
             con.Close();
-            dt = ds.Tables["estoque"];
 
-            for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            if (ds.Tables["estoque"].Rows.Count > 0) // Verifique se há linhas retornadas
             {
-                txb_email.Text = Convert.ToString(dt.Rows[i].ItemArray[0].ToString());
+                dt = ds.Tables["estoque"];
+                txb_email.Text = dt.Rows[0]["email"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Nenhum e-mail salvo encontrado.");
             }
         }
 
         private void SenhaSalva() // Método para obter o registro da senha do login caso tenha sido memorizado
         {
             con.Open();
-            SqlCommand comandosenha = new SqlCommand("select senha from salvar_dados where id = 1;", con);
+            SqlCommand comandosenha = new SqlCommand("SELECT senha FROM salvar_dados WHERE id = 1;", con);
             da = new SqlDataAdapter(comandosenha);
             ds = new DataSet();
             da.Fill(ds, "estoque");
             con.Close();
-            dt = ds.Tables["estoque"];
 
-            for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            if (ds.Tables["estoque"].Rows.Count > 0) // Verifique se há linhas retornadas
             {
-                txb_password.Text = Convert.ToString(dt.Rows[i].ItemArray[0].ToString());
+                dt = ds.Tables["estoque"];
+                txb_password.Text = dt.Rows[0]["senha"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Nenhuma senha salva encontrada.");
             }
         }
+
 
         private void txb_register_Click(object sender, EventArgs e) // Botão "Cadastrar"
         {
@@ -169,6 +181,11 @@ namespace GerenciadorDeEstoque
         private void txb_password_TextChanged_1(object sender, EventArgs e) // Quando altera o texto da text box senha
         {
             txb_password.PasswordChar = '*'; // Os caracteres da senha saem com *
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
