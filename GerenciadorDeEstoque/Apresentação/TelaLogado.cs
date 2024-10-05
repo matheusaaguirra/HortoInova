@@ -89,8 +89,8 @@ namespace GerenciadorDeEstoque.Apresentação
         {
             listView_Cliente.Columns.Add("ID", 50).TextAlign = HorizontalAlignment.Center;
             listView_Cliente.Columns.Add("Nome", 220).TextAlign = HorizontalAlignment.Center;
-            listView_Cliente.Columns.Add("Cor", 100).TextAlign = HorizontalAlignment.Center;
-            listView_Cliente.Columns.Add("Tamanho", 80).TextAlign = HorizontalAlignment.Center;
+            listView_Cliente.Columns.Add("Tipo", 100).TextAlign = HorizontalAlignment.Center;
+            listView_Cliente.Columns.Add("Categoria", 80).TextAlign = HorizontalAlignment.Center;
             listView_Cliente.Columns.Add("Quantidade", 80).TextAlign = HorizontalAlignment.Center;
             listView_Cliente.Columns.Add("Preço venda", 80).TextAlign = HorizontalAlignment.Center;
             listView_Cliente.Columns.Add("Preço custo", 80).TextAlign = HorizontalAlignment.Center;
@@ -101,7 +101,7 @@ namespace GerenciadorDeEstoque.Apresentação
         {
             ExibirEstoque();
             con.Open();
-            cmdListView = new SqlCommand("select idproduto, nome, cor, tamanho, quantidade, preco, preco_custo, lucro_venda from produtos;", con);
+            cmdListView = new SqlCommand("select idproduto, nomeproduto, tipo, categoria, quantidade, preco, precovenda, customarketplace from produtos;", con);
             da = new SqlDataAdapter(cmdListView);
             ds = new DataSet();
 
@@ -146,7 +146,7 @@ namespace GerenciadorDeEstoque.Apresentação
         {
             listView_Cliente.Items.Clear(); // Limpar o campo da List View
             con.Open();
-            cmdListView = new SqlCommand("select idproduto, nome, cor, tamanho, quantidade, preco, preco_custo, lucro_venda from produtos", con);
+            cmdListView = new SqlCommand("select idproduto, nomeproduto, tipo, categoria, quantidade, preco, precovenda, customarketplace from produtos", con);
             da = new SqlDataAdapter(cmdListView);
             ds = new DataSet();
             da.Fill(ds, "estoque");
@@ -363,6 +363,7 @@ namespace GerenciadorDeEstoque.Apresentação
                 listView_Pedido.Items[i].SubItems.Add(dt.Rows[i].ItemArray[10].ToString());
                 listView_Pedido.Items[i].SubItems.Add(dt.Rows[i].ItemArray[11].ToString());
             }
+            
         }
 
         public void RefreshPedidos() // Refresh na LIST VIEW de PEDIDOS

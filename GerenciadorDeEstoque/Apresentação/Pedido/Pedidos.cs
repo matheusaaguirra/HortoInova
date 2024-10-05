@@ -82,7 +82,7 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
             string nome = Convert.ToString(comboBox_Produto.SelectedValue);
 
             // Variável do tipo SqlCOmmand para executar os cmds do BD
-            SqlCommand cmdComboBox = new SqlCommand($"select quantidade from produtos where nome = '{nome}';", con);
+            SqlCommand cmdComboBox = new SqlCommand($"select quantidade from produtos where nomeproduto = '{nome}';", con);
             da = new SqlDataAdapter(cmdComboBox);
             ds = new DataSet();
             da.Fill(ds, "estoque");

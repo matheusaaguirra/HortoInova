@@ -31,8 +31,8 @@ namespace GerenciadorDeEstoque.DAO
 
         public bool VerificarLogin(string login, string senha) // Método que verifica se login e senha estão corretos, passando a string true or false
         {
-            comando.CommandText = "select * from funcionario where email = @login and senha = @senha";
-            comando.Parameters.AddWithValue("@login", login);
+            comando.CommandText = "select * from funcionario where email = @email and senha = @senha";
+            comando.Parameters.AddWithValue("@email", login);
             comando.Parameters.AddWithValue("@senha", senha);
 
             try
@@ -56,7 +56,7 @@ namespace GerenciadorDeEstoque.DAO
 
             catch (SqlException)
             {
-                this.mensagem = "Erro com banco de dados!";
+                this.mensagem = "Erro com banco de dados joao!";
             }
             return check;
         }
@@ -151,14 +151,14 @@ namespace GerenciadorDeEstoque.DAO
 
             if (!nome.Equals("") && !preco.Equals("") && !quantidade.Equals(""))
             {
-                comando.CommandText = "insert into produtos(nome, cor, preco, quantidade, tamanho, preco_custo, custo_marketplace, lucro_venda)values(@nome, @cor, @preco_custo, @quantidade, @tamanho, @preco, @custo_marketplace, @lucrodavenda);";
-                comando.Parameters.AddWithValue("@nome", nome);
+                comando.CommandText = "insert into produtos(nomeproduto, tipo, preco, quantidade, categoria, precovenda, customarketplace, lucro_venda)values(@nomeproduto, @cor, @precovenda, @quantidade, @tamanho, @preco, @customarketplace, @lucrodavenda);";
+                comando.Parameters.AddWithValue("@nomeproduto", nome);
                 comando.Parameters.AddWithValue("@cor", cor);
                 comando.Parameters.AddWithValue("@preco", preco);
                 comando.Parameters.AddWithValue("@quantidade", quantidade);
                 comando.Parameters.AddWithValue("@tamanho", tamanho);
-                comando.Parameters.AddWithValue("@preco_custo", preco_custo);
-                comando.Parameters.AddWithValue("@custo_marketplace", custo_marketplace);
+                comando.Parameters.AddWithValue("@precovenda", preco_custo);
+                comando.Parameters.AddWithValue("@customarketplace", custo_marketplace);
                 comando.Parameters.AddWithValue("@lucrodavenda", lucrodavenda);
 
                 check = false;

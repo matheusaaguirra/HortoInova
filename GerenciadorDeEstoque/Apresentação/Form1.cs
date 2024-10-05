@@ -148,7 +148,7 @@ namespace GerenciadorDeEstoque
                         }
                         else
                         {
-                            MessageBox.Show("Dados incorretos!");
+                            MessageBox.Show("Dados incorretos joao!");
                         }
                     }
                     else

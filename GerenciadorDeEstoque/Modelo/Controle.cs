@@ -20,11 +20,12 @@ namespace GerenciadorDeEstoque.Modelo
             if (!loginDao.mensagem.Equals("")) // Armazenando mensagem de erro
             {
                 this.mensagem = loginDao.mensagem;
+                return verificacao;
             }
             return verificacao;
         }
 
-        // Método para cadastrar a acc
+        // Método para cadastrar a conta
         public string Cadastrar(string nome, string email, string senha, string confirmarsenha, string celular, string lembretesenha)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();

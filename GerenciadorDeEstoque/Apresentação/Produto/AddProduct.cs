@@ -49,7 +49,7 @@ namespace GerenciadorDeEstoque.Apresentação
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Por favor, selecione o tamanho! Caso não possua, coloque: ÚNICO");
+                                    MessageBox.Show("Por favor, selecione a categoria! Caso não possua, coloque: ÚNICO");
                                 }
                             }
                             else
@@ -69,7 +69,7 @@ namespace GerenciadorDeEstoque.Apresentação
                 }
                 else
                 {
-                    MessageBox.Show("Por favor, adicione a cor do produto!");
+                    MessageBox.Show("Por favor, adicione o tipo do produto!");
                 }
             }
             else

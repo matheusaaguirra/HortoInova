@@ -96,9 +96,9 @@ namespace GerenciadorDeEstoque.Apresentação
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label1.Location = new System.Drawing.Point(6, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "COR";
+            this.label1.Text = "TIPO";
             // 
             // txb_Preco
             // 
@@ -176,9 +176,9 @@ namespace GerenciadorDeEstoque.Apresentação
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.label5.Location = new System.Drawing.Point(6, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "TAMANHO";
+            this.label5.Text = "CATEGORIA";
             // 
             // txbCustoMarketPlace
             // 
