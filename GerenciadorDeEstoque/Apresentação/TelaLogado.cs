@@ -505,7 +505,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Cancelado%';", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Concluído%';", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();

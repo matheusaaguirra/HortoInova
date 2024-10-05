@@ -346,11 +346,11 @@ namespace GerenciadorDeEstoque.DAO
                     string qntotal_ = Convert.ToString(qntotal);
 
                     // comando para subtrair o valor do estoque, pelo valor solicitado no pedido do cliente
-                    comandoVar.CommandText = "update produtos set quantidade = @quantidadepedido where nome = @produto;";
+                    comandoVar.CommandText = "update produto set quantidade = @quantidadepedido where comprador = @produto;";
                     comandoVar.Parameters.AddWithValue("@quantidadepedido", qntotal_);
                     comandoVar.Parameters.AddWithValue("@produto", produto);
 
-                    comando.CommandText = "insert into pedidos_encerrados(estado, produto, quantidade, valorunitario, comprador, plataforma, formapgt, desconto, valortotal, marketplace) values('Pendente', @produto, @quantidadepedido, @valorunitario, @cliente, @tipodevenda, @formadepgt, @desconto, @valortotalpedido, @marketplace);";
+                    comando.CommandText = "INSERT INTO pedidos_encerrados (estado, produto, quantidade, valorunitario, comprador, plataforma, formapgt, desconto, valortotal, marketplace) \n    VALUES ('Pendente', @produto, @quantidadepedido, @valorunitario, @cliente, @tipodevenda, @formadepgt, @desconto, @valortotalpedido, @marketplace);";
                     comando.Parameters.AddWithValue("@produto", produto);
                     comando.Parameters.AddWithValue("@quantidadepedido", qntproduto);
                     comando.Parameters.AddWithValue("@valorunitario", valorproduto);
@@ -410,7 +410,7 @@ namespace GerenciadorDeEstoque.DAO
                         //1.  Atualizando o estado do pedido para PAGO
                         //2. Formata todos os dados da tabela analisevendas (que é onde faz o analytics das vendas)
                         //3. Passa todos os dados de valores para a tabela analisevendas
-                        comando.CommandText = "update pedidos_encerrados set estado = 'Pago' where idpedido = @id; truncate table analisevendas; INSERT INTO analisevendas(total, dataPedido) SELECT valortotal, dataAddPedido FROM pedidos_encerrados where estado = 'pago';";
+                        comando.CommandText = "update pedidos_encerrados set estado = 'Concluido' where idpedido = @id; truncate table analisevendas; INSERT INTO analisevendas(total, dataPedido) SELECT valortotal, dataAddPedido FROM pedidos_encerrados where estado = 'pago';";
                         comando.Parameters.AddWithValue("@id", id);
 
                         check = false;
@@ -464,19 +464,31 @@ namespace GerenciadorDeEstoque.DAO
         {
             if (!nome.Equals("") && !datanascimento.Equals("") && !celular.Equals("") && !celular.Equals("") && !cpf.Equals("") && !endereco.Equals("") && !email.Equals(""))
             {
-                comando.CommandText = "update ClienteFisico set nome = @nome, datanascimento = @datanascimento, telefone = @telefone, celular = @celular, rg = @rg, cpf = @cpf, endereco = @endereco, email = @email, observacoes = @observacoes where idclientefisico = @id;";
-                ;
-                comando.Parameters.AddWithValue("@id", id);
-                comando.Parameters.AddWithValue("@nome", nome);
-                comando.Parameters.AddWithValue("@datanascimento", datanascimento);
-                comando.Parameters.AddWithValue("@telefone", telefone);
-                comando.Parameters.AddWithValue("@celular", celular);
-                comando.Parameters.AddWithValue("@rg", rg);
-                comando.Parameters.AddWithValue("@cpf", cpf);
-                comando.Parameters.AddWithValue("@endereco", endereco);
-                comando.Parameters.AddWithValue("@email", email);
-                comando.Parameters.AddWithValue("@observacoes", observacoes);
+                comando.CommandText = @"
+                UPDATE ClienteFisico 
+                SET 
+                    nome = @nome, 
+                    datanascimento = @datanascimento, 
+                    telefone = @telefone, 
+                    celular = @celular, 
+                    rg = @rg, 
+                    cpf = @cpf, 
+                    endereco = @endereco, 
+                    email = @email, 
+                    observacoes = @observacoes 
+                WHERE idclientefisico = @id;
+            ";
 
+                // Adicionando os parâmetros necessários
+                comando.Parameters.AddWithValue("@nome", nome);                // Substitua 'nome' pela variável correspondente
+                comando.Parameters.AddWithValue("@datanascimento", datanascimento); // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@telefone", telefone);        // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@celular", celular);          // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@rg", rg);                    // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@cpf", cpf);                  // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@endereco", endereco);        // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@email", email);              // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@observacoes", observacoes);  // Substitua pela variável correspondente
                 check = false;
                 try
                 {

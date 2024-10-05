@@ -29,6 +29,7 @@ namespace GerenciadorDeEstoque
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txb_register = new System.Windows.Forms.Button();
             this.txb_email = new System.Windows.Forms.TextBox();
@@ -39,10 +40,12 @@ namespace GerenciadorDeEstoque
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txb_join = new System.Windows.Forms.Button();
+            this.checkBoxDadosLogin = new System.Windows.Forms.CheckBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBoxDadosLogin = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -126,33 +129,48 @@ namespace GerenciadorDeEstoque
             this.txb_join.UseVisualStyleBackColor = false;
             this.txb_join.Click += new System.EventHandler(this.txb_join_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GerenciadorDeEstoque.Properties.Resources.logo64x64;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GerenciadorDeEstoque.Properties.Resources.passwordBlue24;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GerenciadorDeEstoque.Properties.Resources.iconUser24Blue;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // checkBoxDadosLogin
             // 
             resources.ApplyResources(this.checkBoxDadosLogin, "checkBoxDadosLogin");
             this.checkBoxDadosLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.checkBoxDadosLogin.Name = "checkBoxDadosLogin";
             this.checkBoxDadosLogin.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            resources.ApplyResources(this.imageList1, "imageList1");
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            resources.ApplyResources(this.imageList2, "imageList2");
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::GerenciadorDeEstoque.Properties.Resources.leaf_solid;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::GerenciadorDeEstoque.Properties.Resources.lock_solid24;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::GerenciadorDeEstoque.Properties.Resources.user_regular__1_24;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -197,6 +215,8 @@ namespace GerenciadorDeEstoque
         public System.Windows.Forms.CheckBox checkBoxDadosLogin;
         public System.Windows.Forms.TextBox txb_email;
         public System.Windows.Forms.TextBox txb_password;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
     }
 }
 

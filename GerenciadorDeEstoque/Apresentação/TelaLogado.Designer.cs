@@ -31,8 +31,6 @@ namespace GerenciadorDeEstoque.Apresentação
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBoxSuporte = new System.Windows.Forms.PictureBox();
             this.lblSuporte = new System.Windows.Forms.Label();
             this.imgSuporte = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -99,7 +97,6 @@ namespace GerenciadorDeEstoque.Apresentação
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSuporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_pedido)).BeginInit();
@@ -127,8 +124,6 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.pictureBoxSuporte);
             this.groupBox2.Controls.Add(this.lblSuporte);
             this.groupBox2.Controls.Add(this.imgSuporte);
             this.groupBox2.Controls.Add(this.lblUsuario);
@@ -145,32 +140,11 @@ namespace GerenciadorDeEstoque.Apresentação
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.label17.Location = new System.Drawing.Point(37, 561);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(44, 13);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Suporte";
-            // 
-            // pictureBoxSuporte
-            // 
-            this.pictureBoxSuporte.Image = global::GerenciadorDeEstoque.Properties.Resources._345523_suporte_tecnico_glyph_icons_grátis_vetor_removebg_preview;
-            this.pictureBoxSuporte.Location = new System.Drawing.Point(9, 493);
-            this.pictureBoxSuporte.Name = "pictureBoxSuporte";
-            this.pictureBoxSuporte.Size = new System.Drawing.Size(100, 65);
-            this.pictureBoxSuporte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSuporte.TabIndex = 10;
-            this.pictureBoxSuporte.TabStop = false;
-            this.pictureBoxSuporte.Click += new System.EventHandler(this.pictureBoxSuporte_Click);
-            // 
             // lblSuporte
             // 
             this.lblSuporte.AutoSize = true;
             this.lblSuporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.lblSuporte.Location = new System.Drawing.Point(14, 379);
+            this.lblSuporte.Location = new System.Drawing.Point(15, 431);
             this.lblSuporte.Name = "lblSuporte";
             this.lblSuporte.Size = new System.Drawing.Size(94, 13);
             this.lblSuporte.TabIndex = 9;
@@ -178,10 +152,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // imgSuporte
             // 
-            this.imgSuporte.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_51_5027845;
-            this.imgSuporte.Location = new System.Drawing.Point(9, 311);
+            this.imgSuporte.Image = global::GerenciadorDeEstoque.Properties.Resources.chart_line_solid;
+            this.imgSuporte.Location = new System.Drawing.Point(35, 375);
             this.imgSuporte.Name = "imgSuporte";
-            this.imgSuporte.Size = new System.Drawing.Size(100, 65);
+            this.imgSuporte.Size = new System.Drawing.Size(55, 53);
             this.imgSuporte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSuporte.TabIndex = 8;
             this.imgSuporte.TabStop = false;
@@ -191,7 +165,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.lblUsuario.Location = new System.Drawing.Point(39, 471);
+            this.lblUsuario.Location = new System.Drawing.Point(40, 523);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 7;
@@ -199,10 +173,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // picBoxUsuarios
             // 
-            this.picBoxUsuarios.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_user_285655;
-            this.picBoxUsuarios.Location = new System.Drawing.Point(11, 403);
+            this.picBoxUsuarios.Image = global::GerenciadorDeEstoque.Properties.Resources.user_solid;
+            this.picBoxUsuarios.Location = new System.Drawing.Point(35, 467);
             this.picBoxUsuarios.Name = "picBoxUsuarios";
-            this.picBoxUsuarios.Size = new System.Drawing.Size(100, 65);
+            this.picBoxUsuarios.Size = new System.Drawing.Size(55, 53);
             this.picBoxUsuarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxUsuarios.TabIndex = 6;
             this.picBoxUsuarios.TabStop = false;
@@ -212,7 +186,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.label6.Location = new System.Drawing.Point(39, 199);
+            this.label6.Location = new System.Drawing.Point(40, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 5;
@@ -220,11 +194,11 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // btn_pedido
             // 
-            this.btn_pedido.Image = global::GerenciadorDeEstoque.Properties.Resources._3688519_128;
-            this.btn_pedido.Location = new System.Drawing.Point(11, 131);
+            this.btn_pedido.Image = global::GerenciadorDeEstoque.Properties.Resources.store_solid;
+            this.btn_pedido.Location = new System.Drawing.Point(35, 195);
             this.btn_pedido.Name = "btn_pedido";
-            this.btn_pedido.Size = new System.Drawing.Size(100, 65);
-            this.btn_pedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_pedido.Size = new System.Drawing.Size(55, 53);
+            this.btn_pedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_pedido.TabIndex = 4;
             this.btn_pedido.TabStop = false;
             this.btn_pedido.Click += new System.EventHandler(this.btn_pedido_Click);
@@ -233,7 +207,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.label2.Location = new System.Drawing.Point(40, 288);
+            this.label2.Location = new System.Drawing.Point(41, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 3;
@@ -241,10 +215,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // btnImg_Cliente
             // 
-            this.btnImg_Cliente.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_User_Customers_1218712;
-            this.btnImg_Cliente.Location = new System.Drawing.Point(11, 223);
+            this.btnImg_Cliente.Image = global::GerenciadorDeEstoque.Properties.Resources.users_solid;
+            this.btnImg_Cliente.Location = new System.Drawing.Point(35, 284);
             this.btnImg_Cliente.Name = "btnImg_Cliente";
-            this.btnImg_Cliente.Size = new System.Drawing.Size(100, 65);
+            this.btnImg_Cliente.Size = new System.Drawing.Size(55, 53);
             this.btnImg_Cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnImg_Cliente.TabIndex = 2;
             this.btnImg_Cliente.TabStop = false;
@@ -254,7 +228,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.label1.Location = new System.Drawing.Point(40, 104);
+            this.label1.Location = new System.Drawing.Point(41, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
@@ -262,11 +236,14 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_kthememgr_7240;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 39);
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::GerenciadorDeEstoque.Properties.Resources.warehouse_solid;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 100);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -903,13 +880,13 @@ namespace GerenciadorDeEstoque.Apresentação
             this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(69, 23);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -920,7 +897,7 @@ namespace GerenciadorDeEstoque.Apresentação
             this.arquivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1167, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1167, 27);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -944,7 +921,6 @@ namespace GerenciadorDeEstoque.Apresentação
             this.Text = "Gerenciador de estoque";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSuporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_pedido)).EndInit();
@@ -1018,8 +994,6 @@ namespace GerenciadorDeEstoque.Apresentação
         private System.Windows.Forms.GroupBox gpBoxUsuario;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.PictureBox pictureBoxSuporte;
         private System.Windows.Forms.ListView listViewAnaliseVendas;
         private System.Windows.Forms.Button btn2021;
         private System.Windows.Forms.Button btn2020;

@@ -28,13 +28,13 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="NomeClientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NomeClientes" msprop:Generator_UserDSName="NomeClientes">
+  <xs:element name="NomeClientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="NomeClientes" msprop:Generator_DataSetName="NomeClientes">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="funcionario" msprop:Generator_TableClassName="funcionarioDataTable" msprop:Generator_TableVarName="tablefuncionario" msprop:Generator_TablePropName="funcionario" msprop:Generator_RowDeletingName="funcionarioRowDeleting" msprop:Generator_RowChangingName="funcionarioRowChanging" msprop:Generator_RowEvHandlerName="funcionarioRowChangeEventHandler" msprop:Generator_RowDeletedName="funcionarioRowDeleted" msprop:Generator_UserTableName="funcionario" msprop:Generator_RowChangedName="funcionarioRowChanged" msprop:Generator_RowEvArgName="funcionarioRowChangeEvent" msprop:Generator_RowClassName="funcionarioRow">
+        <xs:element name="funcionario" msprop:Generator_RowClassName="funcionarioRow" msprop:Generator_RowEvHandlerName="funcionarioRowChangeEventHandler" msprop:Generator_RowDeletedName="funcionarioRowDeleted" msprop:Generator_RowDeletingName="funcionarioRowDeleting" msprop:Generator_RowEvArgName="funcionarioRowChangeEvent" msprop:Generator_TablePropName="funcionario" msprop:Generator_RowChangedName="funcionarioRowChanged" msprop:Generator_RowChangingName="funcionarioRowChanging" msprop:Generator_TableClassName="funcionarioDataTable" msprop:Generator_UserTableName="funcionario" msprop:Generator_TableVarName="tablefuncionario">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
+              <xs:element name="nome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_UserColumnName="nome">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />

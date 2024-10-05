@@ -32,12 +32,33 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
         SqlCommand comando = new SqlCommand();
         Conexao conect = new Conexao();
 
-        private void EditarCliente_Load(object sender, EventArgs e)
+        private void CarregarClientes()
         {
-            // TODO: esta linha de código carrega dados na tabela 'estoqueDataSet2.clientefisico'. Você pode movê-la ou removê-la conforme necessário.
-            this.clientefisicoTableAdapter.Fill(this.estoqueDataSet2.clientefisico);
+            DataTable dataTable = new DataTable();
+            string connectionString = @"Data Source=localhost\SQLEXPRESS; Initial Catalog=estoque; Integrated Security=True;";
 
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
+                    string query = "SELECT * FROM clientefisico";
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, con))
+                    {
+                        // Aqui a consulta é executada e os resultados são preenchidos no DataTable
+                        adapter.Fill(dataTable);
+                    }
+                }
+
+                // A DataTable agora contém os dados retornados do banco de dados
+               // TelaLogado.DataSource = dataTable; // Vincula os dados ao DataGridView
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar os dados: " + ex.Message);
+            }
         }
+
 
         private void Nome()
         {

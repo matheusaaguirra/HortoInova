@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace GerenciadorDeEstoque.Apresentação.Cliente
 {
     partial class EditarCliente
@@ -362,5 +364,7 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
         private System.Windows.Forms.TextBox txbObservacoes;
         private System.Windows.Forms.Button btnAlterarDados;
         private System.Windows.Forms.Button btnRemoverProdutos;
+
+        public EventHandler EditarCliente_Load { get; private set; }
     }
 }
