@@ -1191,5 +1191,10 @@ namespace GerenciadorDeEstoque.Apresentação
             MostrarSuporteTecnico();
         }
         #endregion
+
+        private void listViewAnaliseVendas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

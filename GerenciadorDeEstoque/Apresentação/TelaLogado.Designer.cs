@@ -333,9 +333,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // pictureBoxEditarCliente
             // 
-            this.pictureBoxEditarCliente.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
-            this.pictureBoxEditarCliente.Location = new System.Drawing.Point(200, 25);
-            this.pictureBoxEditarCliente.Name = "pictureBoxEditarCliente";
+
+            //this.pictureBoxEditarCliente.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
+           // this.pictureBoxEditarCliente.Location = new System.Drawing.Point(200, 25);
+            //this.pictureBoxEditarCliente.Name = "pictureBoxEditarCliente";
             this.pictureBoxEditarCliente.Size = new System.Drawing.Size(48, 38);
             this.pictureBoxEditarCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEditarCliente.TabIndex = 17;
@@ -344,12 +345,13 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(191, 66);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 13);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Editar cliente";
+
+            //this.label14.AutoSize = true;
+            //this.label14.Location = new System.Drawing.Point(191, 66);
+            //this.label14.Name = "label14";
+            //this.label14.Size = new System.Drawing.Size(68, 13);
+            //this.label14.TabIndex = 18;
+            //this.label14.Text = "Editar cliente";
             // 
             // pictureBox2
             // 
@@ -479,7 +481,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(100, 68);
+            this.label7.Location = new System.Drawing.Point(31, 68);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 12;
@@ -488,7 +490,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // pictureAlterarEstadoPedido
             // 
             this.pictureAlterarEstadoPedido.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
-            this.pictureAlterarEstadoPedido.Location = new System.Drawing.Point(110, 27);
+            this.pictureAlterarEstadoPedido.Location = new System.Drawing.Point(38, 28);
             this.pictureAlterarEstadoPedido.Name = "pictureAlterarEstadoPedido";
             this.pictureAlterarEstadoPedido.Size = new System.Drawing.Size(48, 38);
             this.pictureAlterarEstadoPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -498,23 +500,24 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // btn_criarPedido
             // 
-            this.btn_criarPedido.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_sign_add_299068;
-            this.btn_criarPedido.Location = new System.Drawing.Point(38, 28);
-            this.btn_criarPedido.Name = "btn_criarPedido";
-            this.btn_criarPedido.Size = new System.Drawing.Size(48, 38);
-            this.btn_criarPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_criarPedido.TabIndex = 7;
-            this.btn_criarPedido.TabStop = false;
-            this.btn_criarPedido.Click += new System.EventHandler(this.btn_criarPedido_Click);
+
+            //this.btn_criarPedido.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_sign_add_299068;
+            //this.btn_criarPedido.Location = new System.Drawing.Point(38, 28);
+            //this.btn_criarPedido.Name = "btn_criarPedido";
+            //this.btn_criarPedido.Size = new System.Drawing.Size(48, 38);
+            //this.btn_criarPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            //this.btn_criarPedido.TabIndex = 7;
+            //this.btn_criarPedido.TabStop = false;
+            //this.btn_criarPedido.Click += new System.EventHandler(this.btn_criarPedido_Click);
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 68);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Criar pedido";
+            //this.label9.AutoSize = true;
+            //this.label9.Location = new System.Drawing.Point(31, 68);
+            //this.label9.Name = "label9";
+            //this.label9.Size = new System.Drawing.Size(63, 13);
+            //this.label9.TabIndex = 8;
+            //this.label9.Text = "Criar pedido";
             // 
             // listView_Pedido
             // 
@@ -812,6 +815,7 @@ namespace GerenciadorDeEstoque.Apresentação
             this.listViewAnaliseVendas.TabIndex = 0;
             this.listViewAnaliseVendas.UseCompatibleStateImageBehavior = false;
             this.listViewAnaliseVendas.View = System.Windows.Forms.View.Details;
+            this.listViewAnaliseVendas.SelectedIndexChanged += new System.EventHandler(this.listViewAnaliseVendas_SelectedIndexChanged);
             // 
             // listViewUsuario
             // 

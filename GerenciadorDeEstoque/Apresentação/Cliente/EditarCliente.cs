@@ -18,6 +18,7 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
         public EditarCliente()
         {
             InitializeComponent();
+            //this.Load += new System.EventHandler(this.EditarCliente_Load);
         }
         public bool check = false;
         public string mensagem = "";
@@ -31,6 +32,31 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
 
         SqlCommand comando = new SqlCommand();
         Conexao conect = new Conexao();
+
+        private void EditarCliente_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                CarregarClientes(); // Método para carregar dados dos clientes
+                if (!string.IsNullOrEmpty(txbString.Text))
+                {
+                    // Carregar informações nos campos do formulário com base no ID
+                    Nome();
+                    DataNascimento();
+                    Telefone();
+                    Celular();
+                    RG();
+                    CPF();
+                    Endereco();
+                    Email();
+                    Observacoes();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar as informações: " + ex.Message);
+            }
+        }
 
         private void CarregarClientes()
         {
