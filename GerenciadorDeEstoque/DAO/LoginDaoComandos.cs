@@ -465,7 +465,7 @@ namespace GerenciadorDeEstoque.DAO
             if (!nome.Equals("") && !datanascimento.Equals("") && !celular.Equals("") && !celular.Equals("") && !cpf.Equals("") && !endereco.Equals("") && !email.Equals(""))
             {
                 comando.CommandText = @"
-                UPDATE ClienteFisico 
+                UPDATE clientefisico 
                 SET 
                     nome = @nome, 
                     datanascimento = @datanascimento, 

@@ -334,9 +334,9 @@ namespace GerenciadorDeEstoque.Apresentação
             // pictureBoxEditarCliente
             // 
 
-            //this.pictureBoxEditarCliente.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
-           // this.pictureBoxEditarCliente.Location = new System.Drawing.Point(200, 25);
-            //this.pictureBoxEditarCliente.Name = "pictureBoxEditarCliente";
+            this.pictureBoxEditarCliente.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
+            this.pictureBoxEditarCliente.Location = new System.Drawing.Point(200, 25);
+            this.pictureBoxEditarCliente.Name = "pictureBoxEditarCliente";
             this.pictureBoxEditarCliente.Size = new System.Drawing.Size(48, 38);
             this.pictureBoxEditarCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEditarCliente.TabIndex = 17;
@@ -346,12 +346,12 @@ namespace GerenciadorDeEstoque.Apresentação
             // label14
             // 
 
-            //this.label14.AutoSize = true;
-            //this.label14.Location = new System.Drawing.Point(191, 66);
-            //this.label14.Name = "label14";
-            //this.label14.Size = new System.Drawing.Size(68, 13);
-            //this.label14.TabIndex = 18;
-            //this.label14.Text = "Editar cliente";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(191, 66);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 13);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Editar cliente";
             // 
             // pictureBox2
             // 
