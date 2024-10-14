@@ -1196,5 +1196,10 @@ namespace GerenciadorDeEstoque.Apresentação
         {
 
         }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

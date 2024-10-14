@@ -476,12 +476,12 @@ namespace GerenciadorDeEstoque.DAO
                     endereco = @endereco, 
                     email = @email, 
                     observacoes = @observacoes 
-                WHERE idclientefisico = @id;
+                WHERE idclientefisico = @idclientefisico;
             ";
 
                 // Adicionando os parâmetros necessários
                 comando.Parameters.AddWithValue("@nome", nome);                // Substitua 'nome' pela variável correspondente
-                comando.Parameters.AddWithValue("@datanascimento", datanascimento); // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@datanascimento", DateTime.Parse(datanascimento));
                 comando.Parameters.AddWithValue("@telefone", telefone);        // Substitua pela variável correspondente
                 comando.Parameters.AddWithValue("@celular", celular);          // Substitua pela variável correspondente
                 comando.Parameters.AddWithValue("@rg", rg);                    // Substitua pela variável correspondente
@@ -489,6 +489,7 @@ namespace GerenciadorDeEstoque.DAO
                 comando.Parameters.AddWithValue("@endereco", endereco);        // Substitua pela variável correspondente
                 comando.Parameters.AddWithValue("@email", email);              // Substitua pela variável correspondente
                 comando.Parameters.AddWithValue("@observacoes", observacoes);  // Substitua pela variável correspondente
+                comando.Parameters.AddWithValue("@idclientefisico", id); // The ID you want to update
                 check = false;
                 try
                 {

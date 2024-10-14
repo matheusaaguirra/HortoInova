@@ -137,6 +137,9 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
             this.txbDataNascimento.Name = "txbDataNascimento";
             this.txbDataNascimento.Size = new System.Drawing.Size(118, 20);
             this.txbDataNascimento.TabIndex = 5;
+            this.txbDataNascimento.TextChanged += new System.EventHandler(this.txbDataNascimento_TextChanged);
+            this.txbDataNascimento.Enter += new System.EventHandler(this.txbDataNascimento_Enter);
+            this.txbDataNascimento.Leave += new System.EventHandler(this.txbDataNascimento_Leave);
             // 
             // label4
             // 
@@ -364,7 +367,5 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
         private System.Windows.Forms.TextBox txbObservacoes;
         private System.Windows.Forms.Button btnAlterarDados;
         private System.Windows.Forms.Button btnRemoverProdutos;
-
-        
     }
 }

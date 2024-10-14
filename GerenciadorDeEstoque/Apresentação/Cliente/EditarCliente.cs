@@ -451,5 +451,27 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
             // método para atualizar a lista de cliente
             RefreshCliente();
         }
+
+        private void txbDataNascimento_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txbDataNascimento_Enter(object sender, EventArgs e)
+        {
+            if(txbDataNascimento.Text == "YYYY-MM-DD"){
+                txbDataNascimento.Text = "";
+                txbDataNascimento.ForeColor = Color.Black;
+            }
+        }
+
+        private void txbDataNascimento_Leave(object sender, EventArgs e)
+        {
+            if (txbDataNascimento.Text == "")
+            {
+                txbDataNascimento.Text = "YYYY-MM-DD";
+                txbDataNascimento.ForeColor = Color.LightGreen;
+            }
+        }
     }
 }
