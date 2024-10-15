@@ -32,12 +32,23 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
             System.Windows.Forms.CheckBox checkBox_Cancelado;
             this.btnExcluirPedido = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox_Pago = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txb_Id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox_Pago = new System.Windows.Forms.CheckBox();
             checkBox_Cancelado = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
+            // 
+            // checkBox_Cancelado
+            // 
+            checkBox_Cancelado.AutoSize = true;
+            checkBox_Cancelado.Location = new System.Drawing.Point(237, 63);
+            checkBox_Cancelado.Name = "checkBox_Cancelado";
+            checkBox_Cancelado.Size = new System.Drawing.Size(77, 17);
+            checkBox_Cancelado.TabIndex = 5;
+            checkBox_Cancelado.Text = "Cancelado";
+            checkBox_Cancelado.UseVisualStyleBackColor = false;
+            checkBox_Cancelado.CheckedChanged += new System.EventHandler(this.checkBox_Cancelado_CheckedChanged);
             // 
             // btnExcluirPedido
             // 
@@ -66,27 +77,6 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
             this.button1.Text = "MUDAR ESTADO DO PEDIDO";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // checkBox_Cancelado
-            // 
-            checkBox_Cancelado.AutoSize = true;
-            checkBox_Cancelado.Location = new System.Drawing.Point(237, 63);
-            checkBox_Cancelado.Name = "checkBox_Cancelado";
-            checkBox_Cancelado.Size = new System.Drawing.Size(77, 17);
-            checkBox_Cancelado.TabIndex = 5;
-            checkBox_Cancelado.Text = "Cancelado";
-            checkBox_Cancelado.UseVisualStyleBackColor = false;
-            // 
-            // checkBox_Pago
-            // 
-            this.checkBox_Pago.AutoSize = true;
-            this.checkBox_Pago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
-            this.checkBox_Pago.Location = new System.Drawing.Point(237, 40);
-            this.checkBox_Pago.Name = "checkBox_Pago";
-            this.checkBox_Pago.Size = new System.Drawing.Size(51, 17);
-            this.checkBox_Pago.TabIndex = 4;
-            this.checkBox_Pago.Text = "Pago";
-            this.checkBox_Pago.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -118,6 +108,17 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
+            // checkBox_Pago
+            // 
+            this.checkBox_Pago.AutoSize = true;
+            this.checkBox_Pago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
+            this.checkBox_Pago.Location = new System.Drawing.Point(237, 40);
+            this.checkBox_Pago.Name = "checkBox_Pago";
+            this.checkBox_Pago.Size = new System.Drawing.Size(75, 17);
+            this.checkBox_Pago.TabIndex = 4;
+            this.checkBox_Pago.Text = "Concluído";
+            this.checkBox_Pago.UseVisualStyleBackColor = false;
+            // 
             // EncerrarPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,9 +146,9 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox_Pago;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txb_Id;
         private System.Windows.Forms.Button btnExcluirPedido;
+        private System.Windows.Forms.CheckBox checkBox_Pago;
     }
 }

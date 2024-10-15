@@ -84,5 +84,10 @@ namespace GerenciadorDeEstoque.Apresentação.Pedido
         {
 
         }
+
+        private void checkBox_Cancelado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

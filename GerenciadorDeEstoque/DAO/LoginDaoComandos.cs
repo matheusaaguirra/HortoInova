@@ -410,7 +410,7 @@ namespace GerenciadorDeEstoque.DAO
                         //1.  Atualizando o estado do pedido para PAGO
                         //2. Formata todos os dados da tabela analisevendas (que é onde faz o analytics das vendas)
                         //3. Passa todos os dados de valores para a tabela analisevendas
-                        comando.CommandText = "update pedidos_encerrados set estado = 'Concluido' where idpedido = @id; truncate table analisevendas; INSERT INTO analisevendas(total, dataPedido) SELECT valortotal, dataAddPedido FROM pedidos_encerrados where estado = 'pago';";
+                        comando.CommandText = "update pedidos_encerrados set estado = 'Concluido' where idpedido = @id;";
                         comando.Parameters.AddWithValue("@id", id);
 
                         check = false;

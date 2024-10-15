@@ -474,7 +474,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Pago%';", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Concluído%';", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();
@@ -505,7 +505,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Concluído%';", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Cancelado%';", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();
@@ -536,7 +536,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Pago%' or estado LIKE '%Pendente%' order by estado desc;", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados  order by estado desc;", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();
@@ -567,7 +567,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Pago%' or estado LIKE '%Cancelado%' order by estado desc;", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Concluído%' or estado LIKE '%Cancelado%' order by estado desc;", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();
@@ -629,7 +629,7 @@ namespace GerenciadorDeEstoque.Apresentação
             {
                 listView_Pedido.Items.Clear();
                 con.Open();
-                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Pago%' or estado LIKE '%Pendente%' or estado LIKE '%Cancelado%' order by estado desc;", con);
+                SqlCommand cmdAddPedido = new SqlCommand($"select * from pedidos_encerrados where estado LIKE '%Concluído%' or estado LIKE '%Pendente%' or estado LIKE '%Cancelado%' order by estado desc;", con);
 
                 da = new SqlDataAdapter(cmdAddPedido);
                 ds = new DataSet();
@@ -669,7 +669,7 @@ namespace GerenciadorDeEstoque.Apresentação
 
         private void checkBoxCancelados_CheckedChanged(object sender, EventArgs e) // Check box cancelados
         {
-            MetodoExibirPedidosporEstado();
+            //MetodoExibirPedidosporEstado();
         }
         #endregion
 
