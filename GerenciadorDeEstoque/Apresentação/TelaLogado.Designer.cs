@@ -3,9 +3,6 @@ namespace GerenciadorDeEstoque.Apresentação
 {
     partial class TelaLogado
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -787,23 +784,10 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
-            this.pictureBox6.Location = new System.Drawing.Point(42, 31);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 38);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+           
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(31, 71);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 13);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "Editar usuário";
             // 
             // gpBoxSuporte
             // 

@@ -40,7 +40,7 @@ namespace GerenciadorDeEstoque
         private void ChecarLoginSalvo() // Método para checar se o usuário marcou para lembrar os dados de login
         {
             con.Open();
-            SqlCommand comando = new SqlCommand("SELECT salvar FROM salvar_dados WHERE id = 1;", con);
+            SqlCommand comando = new SqlCommand("SELECT salvar FROM salvar_dados", con);
             da = new SqlDataAdapter(comando);
             ds = new DataSet();
             da.Fill(ds, "estoque");
@@ -66,7 +66,7 @@ namespace GerenciadorDeEstoque
         private void EmailSalvo() // Método para obter o registro do e-mail do login caso tenha sido memorizado
         {
             con.Open();
-            SqlCommand comandologin = new SqlCommand("SELECT email FROM salvar_dados WHERE id = 1;", con);
+            SqlCommand comandologin = new SqlCommand("SELECT email FROM salvar_dados", con);
             da = new SqlDataAdapter(comandologin);
             ds = new DataSet();
             da.Fill(ds, "estoque");
@@ -86,7 +86,7 @@ namespace GerenciadorDeEstoque
         private void SenhaSalva() // Método para obter o registro da senha do login caso tenha sido memorizado
         {
             con.Open();
-            SqlCommand comandosenha = new SqlCommand("SELECT senha FROM salvar_dados WHERE id = 1;", con);
+            SqlCommand comandosenha = new SqlCommand("SELECT senha FROM salvar_dados", con);
             da = new SqlDataAdapter(comandosenha);
             ds = new DataSet();
             da.Fill(ds, "estoque");
