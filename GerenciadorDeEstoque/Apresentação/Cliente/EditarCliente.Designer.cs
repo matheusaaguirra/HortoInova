@@ -204,9 +204,9 @@ namespace GerenciadorDeEstoque.Apresentação.Cliente
             this.labelCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(252)))), ((int)(((byte)(197)))));
             this.labelCPF.Location = new System.Drawing.Point(9, 71);
             this.labelCPF.Name = "labelCPF";
-            this.labelCPF.Size = new System.Drawing.Size(59, 13);
+            this.labelCPF.Size = new System.Drawing.Size(27, 13);
             this.labelCPF.TabIndex = 12;
-            this.labelCPF.Text = "CPF/CNPJ";
+            this.labelCPF.Text = "CPF";
             // 
             // txbCPF
             // 

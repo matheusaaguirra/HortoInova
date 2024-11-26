@@ -195,7 +195,7 @@ namespace GerenciadorDeEstoque.Apresentação
             listView_Clientes.Columns.Add("Telefone", 100).TextAlign = HorizontalAlignment.Center;
             listView_Clientes.Columns.Add("Celular", 100).TextAlign = HorizontalAlignment.Center;
             listView_Clientes.Columns.Add("RG", 100).TextAlign = HorizontalAlignment.Center;
-            listView_Clientes.Columns.Add("CPF / CNPJ", 100).TextAlign = HorizontalAlignment.Center;
+            listView_Clientes.Columns.Add("CPF", 100).TextAlign = HorizontalAlignment.Center;
             listView_Clientes.Columns.Add("Endereço", 100).TextAlign = HorizontalAlignment.Center;
             listView_Clientes.Columns.Add("E-mail", 100).TextAlign = HorizontalAlignment.Center;
             listView_Clientes.Columns.Add("Observações", 100).TextAlign = HorizontalAlignment.Center;

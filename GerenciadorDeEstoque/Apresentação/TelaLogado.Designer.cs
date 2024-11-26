@@ -325,7 +325,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_sign_add_299068;
+            
             this.pictureBox2.Location = new System.Drawing.Point(119, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 38);
@@ -336,12 +336,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Cliente jurídico";
+            
             // 
             // btn_NovoCliente
             // 
@@ -402,12 +397,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(415, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Exibir pedidos:";
+            
             // 
             // checkBoxCancelados
             // 
@@ -415,49 +405,7 @@ namespace GerenciadorDeEstoque.Apresentação
             // 
             // checkBoxPago
             // 
-            this.checkBoxPago.AutoSize = true;
-            this.checkBoxPago.Checked = true;
-            this.checkBoxPago.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxPago.Location = new System.Drawing.Point(579, 49);
-            this.checkBoxPago.Name = "checkBoxPago";
-            this.checkBoxPago.Size = new System.Drawing.Size(56, 17);
-            this.checkBoxPago.TabIndex = 16;
-            this.checkBoxPago.Text = "Conclúido";
-            this.checkBoxPago.UseVisualStyleBackColor = true;
-            this.checkBoxPago.CheckedChanged += new System.EventHandler(this.checkBoxPago_CheckedChanged);
-            // 
-            // checkBoxPendentes
-            // 
-            this.checkBoxPendentes.AutoSize = true;
-            this.checkBoxPendentes.Checked = true;
-            this.checkBoxPendentes.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxPendentes.Location = new System.Drawing.Point(496, 49);
-            this.checkBoxPendentes.Name = "checkBoxPendentes";
-            this.checkBoxPendentes.Size = new System.Drawing.Size(77, 17);
-            this.checkBoxPendentes.TabIndex = 15;
-            this.checkBoxPendentes.Text = "Pendentes";
-            this.checkBoxPendentes.UseVisualStyleBackColor = true;
-            this.checkBoxPendentes.CheckedChanged += new System.EventHandler(this.checkBoxPendentes_CheckedChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Alterar estado";
-            // 
-            // pictureAlterarEstadoPedido
-            // 
-            this.pictureAlterarEstadoPedido.Image = global::GerenciadorDeEstoque.Properties.Resources.iconfinder_General_Office_09_2530835;
-            this.pictureAlterarEstadoPedido.Location = new System.Drawing.Point(38, 28);
-            this.pictureAlterarEstadoPedido.Name = "pictureAlterarEstadoPedido";
-            this.pictureAlterarEstadoPedido.Size = new System.Drawing.Size(48, 38);
-            this.pictureAlterarEstadoPedido.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureAlterarEstadoPedido.TabIndex = 11;
-            this.pictureAlterarEstadoPedido.TabStop = false;
-            this.pictureAlterarEstadoPedido.Click += new System.EventHandler(this.pictureAlterarEstadoPedido_Click);
+            
             // 
             // btn_criarPedido
             // 
